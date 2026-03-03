@@ -1,0 +1,130 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Dzaleka Digital Heritage CLI (DZDK)",
+  "projectDescription": "A comprehensive command-line tool for interacting with the Dzaleka Digital Heritage API to access and manage refugee camp digital resources.",
+  "theme": "palm",
+  "primaryColor": "#2563eb",
+  "lightColor": "#3b82f6",
+  "darkColor": "#1e40af",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/overview",
+              "configuration/api-settings"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/health-check",
+              "features/services",
+              "features/events",
+              "features/photos",
+              "features/population",
+              "features/resources"
+            ]
+          },
+          {
+            "group": "Advanced Usage",
+            "pages": [
+              "advanced/search",
+              "advanced/batch-operations",
+              "advanced/export",
+              "advanced/statistics",
+              "advanced/interactive-shell"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/managing-services",
+              "guides/working-with-photos",
+              "guides/data-export",
+              "guides/troubleshooting"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Command Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "commands/overview",
+              "commands/health",
+              "commands/services",
+              "commands/events",
+              "commands/photos",
+              "commands/population",
+              "commands/resources",
+              "commands/search",
+              "commands/batch",
+              "commands/export",
+              "commands/stats",
+              "commands/config",
+              "commands/shell"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Services Management - Browse and manage services with contact information and locations",
+    "Event Management - Access event details including registration and scheduling",
+    "Photo Archive - Upload, browse, and manage photos with metadata and albums",
+    "Population Statistics - View demographic data, trends, and nationality distributions",
+    "Resource Library - Download and manage digital resources and documents",
+    "API Health Monitoring - Check endpoint health with response time analysis",
+    "Rich Terminal Output - Beautiful colorized tables and panels using Rich library",
+    "Batch Operations - Download multiple resources or upload multiple photos efficiently",
+    "Data Export - Export data to CSV or generate detailed markdown reports",
+    "Search Functionality - Cross-resource search with filtering and relevance sorting",
+    "Interactive Shell - Command-line interface with history and tab completion",
+    "Configurable Settings - Customize API URL and timeout settings"
+  ],
+  "publicApiSurface": [
+    "dzdk health - Check API health status",
+    "dzdk services list - List available services with pagination and filtering",
+    "dzdk services get --id <id> - Get specific service details",
+    "dzdk events list - List events with pagination",
+    "dzdk events get --id <id> - Get specific event details",
+    "dzdk photos list - List photos with pagination",
+    "dzdk photos get --id <id> - Get photo details",
+    "dzdk photos upload --file <path> --title <title> - Upload a photo",
+    "dzdk photos metadata --id <id> - View photo metadata",
+    "dzdk photos edit --id <id> - Edit photo information",
+    "dzdk photos album create - Create a new album",
+    "dzdk photos album add - Add photos to an album",
+    "dzdk photos album list - List all albums",
+    "dzdk population stats - Get population statistics",
+    "dzdk resources list - List available resources",
+    "dzdk resources get --id <id> - Get resource details",
+    "dzdk resources fetch --id <id> --output <file> - Download a resource",
+    "dzdk search --query <query> - Search across all resources",
+    "dzdk batch download --type <type> --ids <ids> - Batch download resources",
+    "dzdk batch upload --directory <dir> --type <type> - Batch upload files",
+    "dzdk export csv --type <type> --output <file> - Export data to CSV",
+    "dzdk export report --type <type> --output <file> - Generate markdown report",
+    "dzdk stats services - Show service statistics",
+    "dzdk stats usage - Show usage statistics",
+    "dzdk config --url <url> --timeout <seconds> - Configure CLI settings",
+    "dzdk config --interactive - Interactive configuration mode",
+    "dzdk show-config - Display current configuration",
+    "dzdk shell - Start interactive shell mode"
+  ]
+}
